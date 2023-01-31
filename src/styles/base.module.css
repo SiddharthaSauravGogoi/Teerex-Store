@@ -1,0 +1,32 @@
+.container{
+  width: 100%;
+  padding: 0 1rem 1rem 1rem;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 0.25fr 0.75fr;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  height: max-content;
+}
+
+
+@media screen and (max-width: 500px) {
+  .sidebar{
+    display: none;
+  }
+  .main {
+    grid-template-columns: 1fr;
+  }
+  .homepage, 
+  .products {
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+  }
+}

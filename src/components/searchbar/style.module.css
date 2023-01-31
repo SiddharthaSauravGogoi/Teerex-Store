@@ -1,0 +1,30 @@
+.input {
+  padding: 1rem 1.5rem;
+  margin: 1rem 0;
+  border: 1px solid gray;
+  background-color: rgb(239, 239, 239);
+  border-radius: 5px;
+}
+
+.searchbar_wrapper{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.mobile_filter{
+  display: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+  .searchbar_wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .mobile_filter {
+    display: block;
+  }
+}

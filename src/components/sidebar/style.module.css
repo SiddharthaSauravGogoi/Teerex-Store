@@ -1,0 +1,52 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  margin-right: 1rem;
+  padding: 1rem;
+  height: max-content;
+  border-radius: 5px;
+}
+
+.sidebar_category {
+  display: flex;
+  flex-direction: column;
+  text-transform: capitalize;
+  padding: 1rem 0rem;
+}
+
+.category_item{
+  padding: 0.5rem;
+}
+
+.category_checkbox {
+  margin-right: 0.5rem;
+}
+
+.visible {
+  display: block;
+}
+
+.invisible {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  .sidebar{
+    padding: 0;
+  }
+  .sidebar_category,
+  .price_filter_heading{
+    display: none;
+    padding: 0rem;
+  }
+
+  .sidebar_mobile_category {
+    display: block;
+    background: white;
+    flex-direction: column;
+    text-transform: capitalize;
+    padding: 1rem 0rem;
+  }
+
+}
